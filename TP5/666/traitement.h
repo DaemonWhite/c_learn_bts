@@ -1,0 +1,2 @@
+float moyenne(float note[]);
+
