@@ -55,7 +55,7 @@ void traitrechoix(char choix)
 		
 			demA =saisieReel('a');
 			demB = saisieReel('b');
-			if (demB == 0)
+			if (demB != 0)
 			{
 				reponce = div(demA, demB);
 				resultat(reponce);
