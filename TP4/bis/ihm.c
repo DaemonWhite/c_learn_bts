@@ -35,25 +35,25 @@ void traitechoix(char choix)
 	switch (choix)
 	{
 		case 'i' : 
-			optionA = demande("La Première valeur");
-			optionB = demande("La Seconde valeur");
+			optionA = demande("La Première valeur ");
+			optionB = demande("La Seconde valeur ");
 			
 			resultA = cacule(optionA, optionB); 
 			
 			printf("Le resultat est ; %d", resultA ); break;
 		case 'd' : 
-			optionA = demande("le diviseur");
-			optionB = demande("le dividende");
+			optionA = demande("le diviseur ");
+			optionB = demande("le dividende ");
 			
 			resultA = quotient(optionA, optionB);
 			resultB = reste(optionA, optionB);
 			 
 			printf("Le resultat est du quotient est %d et le reste est %d", resultA, resultB ); break;
 		case 'm' : 
-			optionA = demande("le premier Nombre");
-			optionB = demande("le second Nombre");
-			optionC = demande("le troisiéme Nombre");
-			optionD = demande("le quatrieme Nomnre");
+			optionA = demande("le premier Nombre ");
+			optionB = demande("le second Nombre ");
+			optionC = demande("le troisiéme Nombre ");
+			optionD = demande("le quatrieme Nomnre ");
 			
 			resultA = max(optionA, optionB, optionC, optionD);
 			resultB = mini(optionA, optionB, optionC, optionD);
