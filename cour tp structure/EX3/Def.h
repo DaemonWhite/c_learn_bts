@@ -1,4 +1,4 @@
-#define MAXPERS 100
+#define MAXPERS 0
 
 typedef struct
 {
@@ -7,8 +7,8 @@ typedef struct
 }typsal;
 
 typedef struct
-{
+{ 
 	char nom[25];
 	char tel[11];
-	typesal sal;
+	typsal sal;
 }eltpers;
