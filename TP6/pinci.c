@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include "ihm.h"
 
 int main(void)
 {
 	
-	char choix();
+	char choix;
+	
 	do
 	{
 		choix=menu();

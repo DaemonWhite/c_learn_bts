@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "aplication.h"
-#include "partage.h"
+#include "application.h"
+
+
 
 char menu()
 {
@@ -12,19 +13,39 @@ char menu()
 	
 }
 
+void renderVoyelles(char v[])
+{
+	printf("a : %d\ne : %d\ni : %d\no : %d\nu : %d\ny : %d\n", v[0], v[1], v[2], v[3], v[4], v[5] );
+}
+
+void renderLetter(char v[])
+{
+	for (int i=0; i <= 25; i++ )
+	{
+		printf("%c : %d\n", 97+i, v[i]);
+	}
+}
 
 void traitrechoix(char choix)
 {
-	const int MAX_VOYELLE
-	const int MAX_CHARACTER
 	
+	char v[26];
+	int maxi=26;
 	switch(choix) 
 	{
 		
 		case 'V' :  ;
-		case 'v' :  voyelle(choix, max); break;
-		case 'A' : v[2]++ ; 
-		case 'a' : v[3]++ ; break;
+		case 'v' :  
+			printf("Entrer un texte qui ce fini par la touche * puis Entrée : ");
+			voyelles(maxi, v); 
+			renderVoyelles(v);
+		break;
+		case 'A' :  ; 
+		case 'a' :  
+			printf("Entrer un texte qui ce fini par la touche * puis Entrée : ");
+			lettre(maxi, v);
+			renderLetter(v);
+		break;
 		case 'F' : 
 		case 'f' : printf("fermeture du programe") ; break;	
 		

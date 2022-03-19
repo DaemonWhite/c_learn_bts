@@ -1,22 +1,24 @@
-#include "partage.h"
+#include <stdio.h>
 
-int initia(int max)
+void voyelles(int max, char v[])
 {
-	for (i=0; i <= max; i++ )
+
+	char c;
+
+	for (int i=0; i <= max; i++ )
 	{
 		v[i] = 0;
-	}	
-}
+	}
 
-int voyelles(int max, char v[])
-{
+	c=getchar();
 
-	initia(max);
-	
 	do
 	{
+		c=getchar();
+		
 		switch(c)
 		{
+			
 			case 'a' : v[0]++ ; break;
 			case 'e' : v[1]++ ; break;
 			case 'i' : v[2]++ ; break;
@@ -25,15 +27,25 @@ int voyelles(int max, char v[])
 			case 'y' : v[5]++ ; break;
 		}
 	}while(c!='*');
+	
 }
 
-int lettre(int max, char v[])
+
+void lettre(int max, char v[])
 {
+
+	int i=0;
+	int c;
+
+	for (int i=0; i <= max; i++ )
+	{
+		v[i] = 0;
+	}
 
 	const int ASCIIstart = 97;
 	do
 	{
-		c=getchar(); /*saisi du caractère en tête de la file après l'apui sur entré'*/
+		c=getchar(); //saisi du caractère en tête de la file après l'apui sur entré'
 		
 		i= c - ASCIIstart;
 		v[i]++;
